@@ -9,9 +9,12 @@
   },
   "author": "Dmitry Bezruchenko",
   "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Arhidimon/nodevote.git"
+  },
   "dependencies": {
     "express": "^4.16.4",
-    "mysql": "^2.16.0",
-    "squel": "^5.12.2"
+    "mysql": "^2.16.0"
   }
 }
