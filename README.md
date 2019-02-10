@@ -35,7 +35,7 @@ mysql -u nodevoteuser -p nodevote < nodevote.sql
 ## TESTING
 POST request to http://localhost:3000/theme/. Will create a poll named "Do you like polls?". Name with more than 1024 symbols will return error.
 ```
-curl -v -XPOST -H "Content-type: application/json" -d '{"name":"Do you like polls?"}' 'http://localhost:3000/theme/
+curl -v -XPOST -H "Content-type: application/json" -d '{"name":"Do you like polls?"}' 'http://localhost:3000/theme/'
 ```
 GET request to http://localhost:3000/theme/1. Will get info about poll with themeId 1.
 ```
