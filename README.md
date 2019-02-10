@@ -15,7 +15,11 @@ node server.js
 ```  
 ## DATABASE FROM BACKUP
 ```
-mysql -u root -p nodevote < nodevote.sql
+mysql>CREATE DATABASE nodevote;
+mysql>CREATE USER 'nodevoteuser'@'localhost' IDENTIFIED BY 'password';
+mysql>GRANT ALL PRIVILEGES ON nodevote.* TO 'nodevoteuser'@'localhost';
+
+mysql -u nodevoteuser -p nodevote < nodevote.sql
 ```
 ## TESTING
 POST request to http://localhost:3000/theme/. Will create a poll named "Do you like polls?". Name with more than 1024 symbols will return error.
