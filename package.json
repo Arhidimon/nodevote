@@ -1,0 +1,17 @@
+{
+  "name": "nodevote",
+  "version": "1.0.0",
+  "description": "Voting server with RESTful api.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "restore" : "mysql -u root -p nodevote < nodevote.sql"
+  },
+  "author": "Dmitry Bezruchenko",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "squel": "^5.12.2"
+  }
+}
